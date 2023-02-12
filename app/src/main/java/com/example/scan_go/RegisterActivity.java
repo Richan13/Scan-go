@@ -90,11 +90,12 @@ public class RegisterActivity extends AppCompatActivity {
             mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
-                    if (task.isSuccessful()){
+                    if (task.isSuccessful());{
                         progressDialog.dismiss();
                         sendUserToNextActivity();
                         Toast.makeText(RegisterActivity.this,"Registration Successful", Toast.LENGTH_SHORT).show();
                     }
+                    //error?
                     else {
                         progressDialog.dismiss();
                         Toast.makeText(RegisterActivity.this,""+task.getException(), Toast.LENGTH_SHORT).show();
@@ -106,9 +107,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void sendUserToNextActivity() {
-        Intent intent=new Intent(RegisterActivity.this,storemenu.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
+        Intent intent=new Intent(RegisterActivity.this);
 
     }
 }
