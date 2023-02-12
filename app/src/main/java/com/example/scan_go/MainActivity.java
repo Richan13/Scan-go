@@ -22,7 +22,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
 
     TextView createNewAccount;
-    EditText inputEmail, inputPassword, inputConfirmPassword;
+    EditText inputEmail, inputPassword;
     Button btnLogin;
     //for email validation xxx@xxx.xxx
     String emailPattern = "[a-zA-z0-9._-]+@[a-z]+\\.+[a-z]+";
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        createNewAccount = findViewById(R.id.createNewAccount);
+        createNewAccount = findViewById(R.id.alreadyaccount);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -47,18 +47,16 @@ public class MainActivity extends AppCompatActivity {
 
         createNewAccount.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, RegisterActivity.class));
             }
-
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(MainActivity.this, RegisterActivity.class));
+//            }
         });
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                    performLogin();
-            }
-        });
+                btnLogin.setOnClickListener(v -> performLogin());
     }
 
     private void performLogin() {

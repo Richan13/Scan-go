@@ -131,7 +131,7 @@
                 tools:ignore="MissingConstraints" />
 
             <TextView
-                android:id="@+id/createNewAccount"
+                android:id="@+id/alreadyaccount"
                 android:layout_width="210dp"
                 android:layout_height="34dp"
                 android:text="@string/register_new_account"
@@ -156,7 +156,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/btnLogin"
                 app:layout_constraintStart_toStartOf="@+id/btnLogin"
-                app:layout_constraintTop_toBottomOf="@+id/createNewAccount"
+                app:layout_constraintTop_toBottomOf="@+id/alreadyaccount"
                 tools:ignore="MissingConstraints" />
 
             <View

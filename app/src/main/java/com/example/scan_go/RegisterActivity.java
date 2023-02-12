@@ -49,7 +49,7 @@ public class RegisterActivity extends AppCompatActivity {
         mUser=mAuth.getCurrentUser();
 
         //for if user already has an account
-        alreadyHaveAccount=findViewById(R.id.createNewAccount);
+        alreadyHaveAccount=findViewById(R.id.alreadyaccount);
         alreadyHaveAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

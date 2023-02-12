@@ -134,7 +134,7 @@
                 tools:ignore="MissingConstraints" />
 
             <TextView
-                android:id="@+id/createNewAccount"
+                android:id="@+id/alreadyaccount"
                 android:layout_width="232dp"
                 android:layout_height="32dp"
                 android:text="Already have account?"
