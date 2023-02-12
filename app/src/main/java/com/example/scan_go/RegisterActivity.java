@@ -38,15 +38,15 @@ public class RegisterActivity extends AppCompatActivity {
         //inputs?
         inputEmail=findViewById(R.id.inputEmail);
         inputPassword=findViewById(R.id.inputPassword);
-        inputConfirmPassword=findViewById(R.id.inputConfirmPassword);
-        btnRegister=findViewById(R.id.btnRegister);
+        inputConfirmPassword=findViewById(R.id.confirmPassword);
+        btnRegister=findViewById(R.id.btnregister);
         progressDialog=new ProgressDialog(this);
         //initialize
         mAuth=FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
 
         //for if user already has an account
-        alreadyHaveaccount=findViewById(R.id.alreadyHaveaccount);
+        alreadyHaveaccount=findViewById(R.id.accountExists);
         alreadyHaveaccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -95,6 +95,7 @@ public class RegisterActivity extends AppCompatActivity {
                         sendUserToNextActivity();
                         Toast.makeText(RegisterActivity.this,"Registration Successful", Toast.LENGTH_SHORT).show();
                     }
+                    //error?
                     else {
                         progressDialog.dismiss();
                         Toast.makeText(RegisterActivity.this,""+task.getException(), Toast.LENGTH_SHORT).show();
@@ -106,9 +107,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void sendUserToNextActivity() {
-        Intent intent=new Intent(RegisterActivity.this,storemenu.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
+        Intent intent=new Intent(RegisterActivity.this);
 
     }
 }
