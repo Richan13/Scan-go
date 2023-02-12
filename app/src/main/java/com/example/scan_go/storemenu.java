@@ -6,13 +6,14 @@ import java.io.IOException;
 import java.net.URI;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 
-public class storemenu extends Activity {
-//    @Override
-//    protected void onCreate (Nullable Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.new_page);
-//    }
+public class storemenu extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.store_menu);
+    }
 }
     /** getStoreDetails and getItemDetails URL for demo*/
