@@ -2,9 +2,12 @@ package com.example.scan_go;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -18,7 +21,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    TextView ;
+    TextView alreadyHaveAccount;
     EditText inputEmail,inputPassword,inputConfirmPassword;
     Button btnRegister;
     //for email validation xxx@xxx.xxx
@@ -46,8 +49,8 @@ public class RegisterActivity extends AppCompatActivity {
         mUser=mAuth.getCurrentUser();
 
         //for if user already has an account
-        alreadyHaveaccount=findViewById(R.id.alreadyhaveAccount);
-        alreadyHaveaccount.setOnClickListener(new View.OnClickListener() {
+        alreadyHaveAccount=findViewById(R.id.createNewAccount);
+        alreadyHaveAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(RegisterActivity.this,MainActivity.class));
@@ -107,7 +110,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void sendUserToNextActivity() {
-        Intent intent=new Intent(RegisterActivity.this);
+        Intent intent=new Intent(RegisterActivity.this,storemenu.class);
 
     }
 }

@@ -17,7 +17,6 @@
     </View>
 
     <ScrollView
-        android:id="@+id/forgotPassword"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
@@ -31,7 +30,7 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="@string/login"
                 android:textColor="@color/black"
                 android:textSize="44sp"
                 android:textStyle="bold"
@@ -92,7 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/forgot_password"
+                android:text="forgot_password"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -104,7 +103,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/input_bg"
-                android:text="@string/login"
+                android:text="login"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/inputPassword"
                 app:layout_constraintHorizontal_bias="0.0"

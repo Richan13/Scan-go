@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "561493039845",
+    "project_id": "scan-go-174fa",
+    "storage_bucket": "scan-go-174fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561493039845:android:627bb072b978cff73ed20c",
+        "android_client_info": {
+          "package_name": "com.example.scan_go"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561493039845-nm2nrtfjga8rbctim9lv5gnn2d0394t2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfo-t_BbgLv3psHqk-4EIQieNzR7K5GEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561493039845-nm2nrtfjga8rbctim9lv5gnn2d0394t2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
