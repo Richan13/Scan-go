@@ -1,10 +1,22 @@
 package com.example.scan_go;
 
+import android.os.Bundle;
+
 import java.io.IOException;
 import java.net.URI;
+//import org.apache.http.client.HttpClient;
+//import java.net.http.HttpRequest;
+//import java.net.http.HttpResponse;
 
 public class searchzipcode {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
+        Button btn_search;
+
+    }
     String getStoreDetailsURL = "https://apimdev.wakefern.com/mockexample/V1/getStoreDetails";
     String getItemDetailsURL = "https://apimdev.wakefern.com/mockexample/V1/getItemDetails";
 
