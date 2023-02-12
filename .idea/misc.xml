@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/richa/AndroidStudioProjects/Scango2/app/src/main/res/layout/activity_main.xml" value="0.11639492753623189" />
-        <entry key="..\:/Users/richa/AndroidStudioProjects/Scango2/app/src/main/res/layout/store_menu.xml" value="0.1671195652173913" />
+        <entry key="..\:/Users/richa/AndroidStudioProjects/Scango2/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/richa/AndroidStudioProjects/Scango2/app/src/main/res/layout/store_menu.xml" value="0.22" />
+        <entry key="..\:/Users/richa/AndroidStudioProjects/Scango2/app/src/main/res/layout/zipcode.xml" value="0.2" />
       </map>
     </option>
   </component>
