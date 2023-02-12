@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    TextView alreadyHaveaccount;
+    TextView ;
     EditText inputEmail,inputPassword,inputConfirmPassword;
     Button btnRegister;
     //for email validation xxx@xxx.xxx
@@ -38,15 +38,15 @@ public class RegisterActivity extends AppCompatActivity {
         //inputs?
         inputEmail=findViewById(R.id.inputEmail);
         inputPassword=findViewById(R.id.inputPassword);
-        inputConfirmPassword=findViewById(R.id.confirmPassword);
-        btnRegister=findViewById(R.id.btnregister);
+        inputConfirmPassword=findViewById(R.id.inputConfirmPassword);
+        btnRegister=findViewById(R.id.btnRegister);
         progressDialog=new ProgressDialog(this);
         //initialize
         mAuth=FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
 
         //for if user already has an account
-        alreadyHaveaccount=findViewById(R.id.accountExists);
+        alreadyHaveaccount=findViewById(R.id.alreadyhaveAccount);
         alreadyHaveaccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
