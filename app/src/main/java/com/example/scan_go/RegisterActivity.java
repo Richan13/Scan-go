@@ -22,6 +22,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class RegisterActivity extends AppCompatActivity {
 
     TextView alreadyHaveAccount;
+
     EditText inputEmail,inputPassword,inputConfirmPassword;
     Button btnRegister;
     //for email validation xxx@xxx.xxx
@@ -111,6 +112,9 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void sendUserToNextActivity() {
         Intent intent=new Intent(RegisterActivity.this,storemenu.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+
 
     }
 }

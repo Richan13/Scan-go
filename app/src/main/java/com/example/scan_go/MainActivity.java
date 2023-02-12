@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     EditText inputEmail, inputPassword;
     Button btnLogin;
     //for email validation xxx@xxx.xxx
-    String emailPattern = "[a-zA-z0-9._-]+@[a-z]+\\.+[a-z]+";
+    String emailPattern = "[a-zA-z 0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
     FirebaseAuth mAuth;
     FirebaseUser mUser;
