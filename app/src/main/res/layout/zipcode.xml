@@ -16,7 +16,7 @@
         tools:layout_editor_absoluteY="68dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edit_zip"
         android:layout_width="266dp"
         android:layout_height="47dp"
         android:background="@drawable/input_bg"
@@ -27,7 +27,7 @@
         tools:layout_editor_absoluteY="107dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_getzip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#00FFFFFF"

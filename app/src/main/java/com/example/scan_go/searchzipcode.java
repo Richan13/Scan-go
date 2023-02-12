@@ -1,6 +1,13 @@
 package com.example.scan_go;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.IOException;
 import java.net.URI;
@@ -8,13 +15,27 @@ import java.net.URI;
 //import java.net.http.HttpRequest;
 //import java.net.http.HttpResponse;
 
-public class searchzipcode {
+public class searchzipcode extends AppCompatActivity {
+    Button btn_search;
+    EditText edit_zip;
+    ListView lv_stores;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.zipcode);
 
-        Button btn_search;
+        // assign values to each control on the layout
+        btn_search = findViewById(R.id.btn_getzip);
+        edit_zip = findViewById(R.id.edit_zip);
+        lv_stores = findViewById(R.id.lv_stores);
+
+        // check listeners for each button
+        btn_search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(searchzipcode.this, "You clicked me", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
     String getStoreDetailsURL = "https://apimdev.wakefern.com/mockexample/V1/getStoreDetails";
