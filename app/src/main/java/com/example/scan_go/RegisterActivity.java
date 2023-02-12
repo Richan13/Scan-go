@@ -38,15 +38,15 @@ public class RegisterActivity extends AppCompatActivity {
         //inputs?
         inputEmail=findViewById(R.id.inputEmail);
         inputPassword=findViewById(R.id.inputPassword);
-        inputConfirmPassword=findViewById(R.id.inputConfirmPassword);
-        btnRegister=findViewById(R.id.btnRegister);
+        inputConfirmPassword=findViewById(R.id.confirmPassword);
+        btnRegister=findViewById(R.id.btnregister);
         progressDialog=new ProgressDialog(this);
         //initialize
         mAuth=FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
 
         //for if user already has an account
-        alreadyHaveaccount=findViewById(R.id.alreadyHaveaccount);
+        alreadyHaveaccount=findViewById(R.id.accountExists);
         alreadyHaveaccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,7 +90,7 @@ public class RegisterActivity extends AppCompatActivity {
             mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
-                    if (task.isSuccessful());{
+                    if (task.isSuccessful()){
                         progressDialog.dismiss();
                         sendUserToNextActivity();
                         Toast.makeText(RegisterActivity.this,"Registration Successful", Toast.LENGTH_SHORT).show();
