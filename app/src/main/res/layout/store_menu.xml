@@ -11,29 +11,43 @@
         android:id="@+id/imageView3"
         android:layout_width="416dp"
         android:layout_height="594dp"
-        app:srcCompat="@android:drawable/toast_frame"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="68dp" />
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:srcCompat="@android:drawable/toast_frame" />
 
     <ImageButton
         android:id="@+id/button1"
         android:layout_width="425dp"
         android:layout_height="123dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
         android:backgroundTint="#FFFFFF"
         android:scaleType="centerCrop"
         android:src="@drawable/shoprite"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="101dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
 
     <ImageButton
         android:id="@+id/button2"
         android:layout_width="426dp"
         android:layout_height="119dp"
+        android:layout_marginTop="540dp"
         android:backgroundTint="#FFFFFF"
         android:scaleType="fitCenter"
         android:src="@drawable/pricerite"
-        tools:layout_editor_absoluteX="-8dp"
-        tools:layout_editor_absoluteY="241dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
 
     <ImageButton
         android:id="@+id/button3"
@@ -42,17 +56,26 @@
         android:backgroundTint="#FFFFFF"
         android:scaleType="fitCenter"
         android:src="@drawable/freshgrocer"
-        tools:layout_editor_absoluteX="-12dp"
-        tools:layout_editor_absoluteY="379dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.171" />
 
     <ImageButton
         android:id="@+id/button6"
         android:layout_width="422dp"
         android:layout_height="116dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="#FFFFFF"
         android:scaleType="fitCenter"
         android:src="@drawable/gourmetgrocer"
-        tools:layout_editor_absoluteX="-6dp"
-        tools:layout_editor_absoluteY="521dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.376" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
