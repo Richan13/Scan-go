@@ -21,7 +21,7 @@
         android:layout_height="123dp"
         android:backgroundTint="#FFFFFF"
         android:scaleType="centerCrop"
-        android:src="@drawable/ShopRite"
+        android:src="@drawable/shoprite"
         tools:layout_editor_absoluteX="-5dp"
         tools:layout_editor_absoluteY="101dp" />
 
@@ -31,7 +31,7 @@
         android:layout_height="119dp"
         android:backgroundTint="#FFFFFF"
         android:scaleType="fitCenter"
-        android:src="@drawable/PriceRite"
+        android:src="@drawable/pricerite"
         tools:layout_editor_absoluteX="-8dp"
         tools:layout_editor_absoluteY="241dp" />
 
@@ -41,7 +41,7 @@
         android:layout_height="125dp"
         android:backgroundTint="#FFFFFF"
         android:scaleType="fitCenter"
-        android:src="@drawable/FreshGrocer"
+        android:src="@drawable/freshgrocer"
         tools:layout_editor_absoluteX="-12dp"
         tools:layout_editor_absoluteY="379dp" />
 
@@ -51,7 +51,7 @@
         android:layout_height="116dp"
         android:backgroundTint="#FFFFFF"
         android:scaleType="fitCenter"
-        android:src="@drawable/GourmetGrocer"
+        android:src="@drawable/gourmetgrocer"
         tools:layout_editor_absoluteX="-6dp"
         tools:layout_editor_absoluteY="521dp" />
 
